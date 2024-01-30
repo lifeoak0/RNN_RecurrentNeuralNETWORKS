@@ -1,3 +1,4 @@
+# 调用python库 神经网络训练torch，pandas numpy.
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -9,10 +10,10 @@ import numpy as np
 from collections import Counter
 from nltk.tokenize import word_tokenize
 
-# 假设您的数据是一个CSV文件，其中包含两列：'text'和'label'
+# 假设数据是一个CSV文件，其中包含两列：'text'和'label'
 # 'text'列包含文本，'label'列包含对应的标签（0代表负面，1代表正面）
 
-# 读取数据
+# reading the data which is the csv.file
 def load_data(file_path):
     df = pd.read_csv(file_path)
     return df['text'], df['label']
